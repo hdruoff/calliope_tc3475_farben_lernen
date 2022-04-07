@@ -5,6 +5,8 @@ TCS34725.LernFarbe(Wasserfarben.Gelb)
 TCS34725.LernFarbe(Wasserfarben.Zinnober)
 TCS34725.LernFarbe(Wasserfarben.Blaugr)
 TCS34725.LernFarbe(Wasserfarben.Ultramarin)
+TCS34725.LernFarbe(Wasserfarben.GebrSiena)
+TCS34725.Toleranzf(20)
 basic.forever(function () {
     if (TCS34725.Wasserfarbe(Wasserfarben.Schwarz)) {
         basic.setLedColor(0x000000)
@@ -18,5 +20,7 @@ basic.forever(function () {
         basic.setLedColor(0x00ff00)
     } else if (TCS34725.Wasserfarbe(Wasserfarben.Ultramarin)) {
         basic.setLedColor(0x0000ff)
+    } else if (TCS34725.Wasserfarbe(Wasserfarben.GebrSiena)) {
+        basic.setLedColor(0x65471f)
     }
 })
